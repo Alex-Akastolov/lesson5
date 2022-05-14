@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background-image: url(../img/bg-img.jpeg);
+    width: 100%;
+    margin: 0;
+}
+
+.header {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: yellow;
+}
+
+/* Blocks */
+
+.container {
+    position: relative;
+    height: 200px;
+    border: 5px solid indigo;
+    background-color: gray;
+    float: left;
+    margin: 30px;
+}
+
+.container--sm {
+    width: 200px;
+}
+
+.container--lg {
+    width: 400px;
+}
+
+.block {
+    position: absolute;
+    height: 50%;
+    background-color: gray;
+}
+
+.block--w50p {
+    width: 50%;
+}
+
+.block--w25p {
+    width: 25%;
+}
+
+.block--1 {
+    background-color: green;
+    top: 0;
+    left: 0;
+}
+
+.block--2 {
+    background-color: white;
+    top: 0;
+    left: 50%;
+}
+
+.block--3 {
+    background-color: black;
+    top: 50%;
+    left: 0;
+}
+
+.block--4 {
+    background-color: violet;
+    top: 50%;
+    left: 50%;
+}
+
+.block--5 {
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: translate(-50%, 50%);
+}
+
+.block--6 {
+    background-color: blue;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 50%);
+
+}
+
+.block--7 {
+    background-color: blue;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: translate(50%, 50%);
+}
+
+.block-large {
+    position: absolute;
+    background-color: red;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    justify-content: space-evenly;
+}
+
+.menu__item {
+    flex-basis: 10%;
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.menu__content {
+    background-color: orange;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: aqua;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.menu__item-img {
+    width: 80%;
+    padding: 20px;
+}
+
+.menu__item:hover {
+    outline: 2px solid white;
+}
+
+.menu__item:hover .menu__content {
+    background-color: blue;
+}
+
+.menu__item:hover .menu__link {
+    color: black;
+}
